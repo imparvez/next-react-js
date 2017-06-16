@@ -8,29 +8,32 @@ var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
 
-var _Header = require('../comps/Header');
+var _Header = require('./Header');
 
 var _Header2 = _interopRequireDefault(_Header);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var _jsxFileName = '/Users/parvezshaikh/Desktop/hello-next-react/pages/index.js?entry';
+var _jsxFileName = '/Users/parvezshaikh/Desktop/hello-next-react/comps/MyLayout.js';
 
-exports.default = function () {
-  return _react2.default.createElement('div', {
-    __source: {
+
+var layoutStyle = {
+  margin: 20,
+  padding: 20,
+  border: '1px solid #DDD'
+};
+
+var Layout = function Layout(props) {
+  return _react2.default.createElement('div', { style: layoutStyle, __source: {
       fileName: _jsxFileName,
-      lineNumber: 4
+      lineNumber: 10
     }
   }, _react2.default.createElement(_Header2.default, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 5
+      lineNumber: 11
     }
-  }), _react2.default.createElement('p', {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 6
-    }
-  }, 'Hello Next.js'));
+  }), props.children);
 };
+
+exports.default = Layout;

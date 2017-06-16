@@ -1,8 +1,9 @@
-import Header from '../comps/Header'
+// pages/index.js
+
+import Layout from '../comps/MyLayout.js'
 
 export default () => (
-  <div>
-    <Header />
-    <p>Hello Next.js</p>
-  </div>
+    <Layout>
+       <p>Hello Next.js</p>
+    </Layout>
 )

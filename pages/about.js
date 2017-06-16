@@ -1,8 +1,9 @@
-import Header from '../comps/Header'
+// pages/about.js
+
+import Layout from '../comps/MyLayout.js'
 
 export default () => (
-	<div>
-		<Header />
-		<p>This is about pages</p>
-	</div>
+    <Layout>
+       <p>This is the about page</p>
+    </Layout>
 )
