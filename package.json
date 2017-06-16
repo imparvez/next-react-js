@@ -1,0 +1,17 @@
+{
+  "name": "hello-next-react",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "next": "^2.4.3",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1"
+  }
+}
